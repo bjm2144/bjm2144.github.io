@@ -2,9 +2,9 @@ function Hello(){
    alert("Hello, World");
 }
 function over() {
-   document.write ("Mouse Over");
+   alert("Mouse Over");
 }
             
 function out() {
-   document.write ("Mouse Out");
+   alert("Mouse Out");
 }
