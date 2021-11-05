@@ -1,28 +1,219 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css\styles.css">
+    </head>
+    <body>
 
-<div class="home">
-  
-  <h1> Let's type and see if this shows up on thes screen</h1>
-  <a href="http://www.tutorialspoint.com" target="_self">Tutorials Point</a>
-  <a href="bjm2144.github.io/practiceHTML/test" target="_self">See if this works</a>
-   <a href="bjm2144.github.io/practiceJavaScript/practice" target="_self">JavaScript</a>
-  
-  <h1 class="page-heading">Posts</h1>
+        <h1 id = 'title'>Electoral College Calculator</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<table id = "tableID">
+    <!--Row 1-->
+    <tr>
+        <td id = 'AK'>
+            AK
+        </td>
+        <td id = 'MT'>
+            MT
+        </td>
+        <td id = 'ND'>
+            ND
+        </td>
+        <td id = 'MN'>
+            MN
+        </td>
+        <td id = 'WI'>
+            WI
+        </td>
+        <td id = 'MI'>
+            MI
+        </td>
+        <td id = 'IN'>
+            IN
+        </td>
+        <td id = 'PA'>
+            PA
+        </td>
+        <td id = 'VT'>
+            VT
+        </td>
+        <td id = 'ME'>
+            ME
+        </td>
+    </tr>
+    <!--Row 2-->
+    <tr>
+        <td id = 'WA'>
+            WA
+        </td>
+        <td id = 'ID'>
+            ID
+        </td>
+        <td id = 'SD'>
+            SD
+        </td>
+        <td id = 'NE'>
+            NE
+        </td>
+        <td id = 'IA'>
+            IA
+        </td>
+        <td id = 'IL'>
+            IL
+        </td>
+        <td id = 'OH'>
+            OH
+        </td>
+        <td id = 'WV'>
+            WV
+        </td>
+        <td id = 'NY'>
+            NY
+        </td>
+        <td id = 'NH'>
+            NH
+        </td>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    </tr>
+    <!--Row 3-->
+    <tr>
+        <td id = 'OR'>
+            OR
+        </td>
+        <td id = 'NV'>
+            NV
+        </td>
+        <td id = 'WY'>
+            WY
+        </td>
+        <td id = 'KS'>
+            KS
+        </td>
+        <td id = 'MO'>
+            MO
+        </td>
+        <td id = 'KY'>
+            KY
+        </td>
+        <td id = 'AL'>
+            AL
+        </td>
+        <td id = 'VA'>
+            VA
+        </td>
+        <td id = 'NJ'>
+            NJ
+        </td>
+        <td id = 'MA'>
+            MA
+        </td>
+    </tr>
+    <!--Row 4-->
+    <tr>
+        <td id = 'CA'>
+            CA
+        </td>
+        <td id = 'UT'>
+            UT
+        </td>
+        <td id = 'CO'>
+            CO
+        </td>
+        <td id = 'OK'>
+            OK
+        </td>
+        <td id = 'AR'>
+            AR
+        </td>
+        <td id = 'TN'>
+            TN
+        </td>
+        <td id = 'GA'>
+            GA
+        </td>
+        <td id = 'NC'>
+            NC
+        </td>
+        <td id = 'DE'>
+            DE
+        </td>
+        <td id = 'RI'>
+            RI
+        </td>
+    </tr>
+    <!--Row 5-->
+    <tr>
+        <td id = 'HI'>
+            HI
+        </td>
+        <td id = 'AZ'>
+            AZ
+        </td>
+        <td id = 'NM'>
+            NM
+        </td>
+        <td id = 'TX'>
+            TX
+        </td>
+        <td id = 'LA'>
+            LA
+        </td>
+        <td id = 'MS'>
+            MS
+        </td>
+        <td id = 'FL'>
+            FL
+        </td>
+        <td id = 'SC'>
+            SC
+        </td>
+        <td id = 'MD'>
+            MD
+        </td>
+        <td id = 'CT'>
+            CT
+        </td>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </tr>
+</table>
 
+<div>
+    <table id = "nonStates">
+        <tr>
+            <td id = 'NE1'>
+                NE1
+            </td>
+            <td id = 'NE2'>
+                NE2
+            </td>
+            <td id = 'NE3'>
+                NE3
+            </td>
+            <td id = 'DC'>
+                DC
+            </td>
+            <td id = 'ME1'>
+                ME1
+            </td>
+            <td id = 'ME2'>
+                ME2
+            </td>
+        </tr>
+    </table>
 </div>
+
+<p class = "button" id = "reset">Reset</p>
+
+<div>
+    <p class = "tag" id = "democratTag">Democrats:</p>
+    <p id = "blue">0</p>
+    <br>
+    <p class = "tag" id = "republicanTag">Republicans:</p>
+    <p id = "red">0</p>
+</div>
+
+<script type="text/javascript" src="javascript\changeColor.js"></script>
+
+</body>
+
+</html>
