@@ -1,4 +1,2 @@
 # bjm2144.github.io
-Website test
-
-Hello! And this is a website!
+A simple JS, CSS, and HTML program that mimics those Electoral-College-Click-A-State-To-Change-Color things
